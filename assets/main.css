@@ -357,7 +357,7 @@ nav a.active {
 }
 
 .filter.consumerism:hover, .filter.consumerism.is-checked {
-    background: linear-gradient(160deg, yellow 10%, mediumpurple);
+    background: linear-gradient(160deg, #F9E398, #C5C952);
 }
 
 .filter.garbage:hover, .filter.garbage.is-checked {
