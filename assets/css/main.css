@@ -419,6 +419,14 @@ nav a.active {
       border-radius: 50%;
     }
 
+    .teaser-square {
+      object-fit: cover;
+          width: 16vw;
+          height: 16vw;
+          position: relative;
+          overflow: hidden;
+        }
+
 .articles .teaser.pos1{
   max-width: 22%;
   top: 0;
@@ -457,7 +465,6 @@ nav a.active {
 
 .articles .teaser.pos7{
   margin-top:30%;
-  max-width:10%;
   right: 10%;
 }
 
@@ -516,7 +523,7 @@ nav a.active {
 
 .articles.active .excerpt {
 	display: block;
-  background-color: #fff;
+  /* background-color: #fff; */
   border: 1px solid;
 	color: #000;
 	position: fixed;
@@ -528,6 +535,22 @@ nav a.active {
 	line-height: 1;
   overflow-x: hidden;
 	overflow-y: scroll;
+}
+
+.articles.active.purple .excerpt {
+	background: linear-gradient(180deg, #DCCDE9, 1%, #fff);
+}
+
+.articles.active.yellow .excerpt {
+	background: linear-gradient(180deg, #F9E398, 1%, #fff);
+}
+
+.articles.active.green .excerpt {
+	background: linear-gradient(180deg, #C5C952, 1%, #fff);
+}
+
+.articles.active.lightblue .excerpt {
+	background: linear-gradient(180deg, #ABC7C4, 1%, #fff);
 }
 
 
