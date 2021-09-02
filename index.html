@@ -1,0 +1,272 @@
+
+<!doctype html>
+<html lang="en" class="home">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <title>THUNK TANK | Home</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="./assets/main.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://tjr.xxx/assets/js/isotope.pkgd.min.js"></script>  <script src="https://tjr.xxx/assets/js/jquery.fitvids.js"></script>  <script src="https://tjr.xxx/assets/js/TweenMax.min.js"></script>  <script src="https://tjr.xxx/assets/js/TimelineMax.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127945571-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-127945571-1');
+        </script>
+
+
+</head>
+<body class="home">
+    <header>
+        <div class="branding">
+            <a href="/">
+                THUNK TANK            </a>
+        </div>
+        <nav class="site-nav">
+            <a href="#" id="about-toggle">About</a>
+        </nav>
+    </header>
+<aside class="featured" role="banner" id="panel">
+
+
+<script>
+
+$(document).ready(function() {
+
+$(".card").on("mouseover", function() {
+        $(".card").removeClass("active");
+        $(this).addClass("active");
+});
+
+$(".card").on("mouseout", function() {
+        $(".card").removeClass("active");
+});
+
+$('.card').bind('touchstart touchend', function() {
+    $(".card").removeClass("active");
+    $(this).toggleClass('active');
+});
+
+
+});
+
+
+</script>
+    <div class="about-wrap">
+
+        <p>A website about fashion by and for people who absolutely hate fashion. We don't have social media, but you can contact us by writing to <b>editors@thunk-tank.com</b>.</p>
+
+        <div class="about-bg">
+        </div>
+        </div>
+
+    </div>
+
+
+</aside>
+
+<main class="main index" role="main">
+
+    <div class="filter-nav">
+    <div class="button-group filters-button-group">
+          <a class="filter new" data-filter=".new" style="background:yellow">new</a>
+          <a class="filter consumerism" data-filter=".consumerism">Consumerism</a>
+          <a class="filter garbage" data-filter=".garbage">Garbage</a>
+          <a class="filter prognostication" data-filter=".prognostication">prognostication</a>
+          <a class="filter is-checked everything" data-filter=".everything">Everything</a>
+        </div>
+  </div>
+
+
+<div class="grid">
+
+
+    <div class="articles everything prognostication " data-title="we-hate-burgundy">
+
+        <div class="title">Burgundy is back, we love it, we hate it
+          <img src='assets/test1.gif' class='teaser pos1'>
+          <img src='assets/test2.png' class='teaser pos2'>
+      </div>
+        <div class="meta">01/09/2021</div>
+
+          <div class="we-hate-burgundy excerpt">
+            <p>Burgundy is absolutely fucking awful but I want to drench myself in it head to toe like some kind of murderer</p>
+        </div>
+
+    </div>
+
+    <div class="articles everything prognostication " data-title="manor-core">
+
+            <div class="title">Dress like the home of a 19th-century philosopher you've pretended to have read
+              <img src='assets/test3.png' class='teaser pos2'>
+              <img src='assets/test4.png' class='teaser pos3'>
+            </div>
+            <div class="meta">01/09/2021</div>
+
+              <div class="manor-core excerpt">
+                  <p>Did Schopenhauer have a nice house? Imagine that he did and burrow into the carpets.</p>
+            </div>
+
+        </div>
+
+    <div class="articles everything consumerism prognostication " data-title="belts">
+
+            <div class="title">We've thought about belts enough
+              <img src='assets/test2.png' class='teaser pos4'>
+              <img src='assets/test4.png' class='teaser pos5'>
+            </div>
+            <div class="meta">01/09/2021</div>
+
+              <div class="belts excerpt" >
+                  <p>Here's a collection of belts we think you could buy.</p>
+            </div>
+
+        </div>
+
+        <div class="articles everything consumerism prognostication " data-title="2014">
+
+                <div class="title">The inevitability of aging: 2014 is back
+                  <img src='assets/test1.gif' class='teaser pos4'>
+                  <img src='assets/test3.png' class='teaser pos2'>
+                </div>
+                <div class="meta">01/09/2021</div>
+
+                  <div class="2014 excerpt" >
+                      <p>Unbelievable.</p>
+                </div>
+
+            </div>
+
+
+
+</div>
+
+<script>
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.articles',
+  percentPosition: true,
+  layoutMode: 'vertical',
+    vertical: {
+      horizontalAlignment: 0,
+    },
+  filter: ''
+});
+
+  $grid.on( 'layoutComplete', function() {
+    $('.articles').removeClass('last-item');
+    $('.articles:visible:last').addClass('last-item');
+  });
+
+$('.filters-button-group').on( 'click', '.filter', function() {
+  var $target = $( event.currentTarget );
+  var isChecked = $(this).hasClass('is-checked');
+  var filter = $(this).attr('data-filter');
+  if ( isChecked ) {
+    $grid.isotope({ filter: '*' });
+    $(this).removeClass('is-checked');
+  } else {
+    $('.filter').removeClass('is-checked');
+    $grid.isotope({ filter: filter });
+    $(this).addClass('is-checked');
+  }
+
+  $grid.on( 'layoutComplete', function() {
+    $('.articles').removeClass('last-item');
+    $('.articles:visible:last').addClass('last-item');
+  });
+
+});
+
+
+$(".articles").on("click", function() {
+
+
+        if ( $(this).hasClass("active") ) {
+            $(this).removeClass("active");
+            $grid.isotope('layout');
+        } else {
+            var data = $(this).data('title');
+            var target = '.excerpt.'+data;
+
+            $(".articles").removeClass("active");
+            $(this).addClass("active");
+            $grid.isotope('layout');
+
+        }
+
+        $('#about-toggle').removeClass('toggled');
+        $('aside .wrap').removeClass('hidden');
+        $('.about-wrap').removeClass('visible');
+        $('#about-toggle').text('About');
+
+    });
+
+</script>
+</main>
+
+
+<footer>
+</footer>
+
+<script>
+
+
+  $(document).ready(function(){
+    // Target your .container, .wrapper, .post, etc.
+    $(".excerpt").fitVids();
+    $('.articles:visible:last').addClass('last-item');
+
+    $('#about-toggle').on("click", function(){
+
+        if ( $(this).hasClass('toggled') ){
+            $('aside .wrap').removeClass('hidden');
+            $('.about-wrap').removeClass('visible');
+            $(this).removeClass('toggled');
+            $(this).text('About');
+        } else {
+            $('aside .wrap').addClass('hidden');
+            $(this).addClass('toggled');
+            $('.about-wrap').addClass('visible');
+            $(this).text('Close');
+        }
+
+        $('.articles.active').removeClass('active');
+
+    });
+
+
+  });
+
+//$(document).ready(function(){
+
+//    var rectWidth = $('#panel').outerWidth();
+//    var rectHeight = $('#panel').outerHeight();
+
+//    document.getElementById("MyPath").setAttribute("d",document.getElementById("Path").getAttribute("d"));
+//    var tl = new TimelineMax({repeat:-1});
+//    tl.to("#Text",25,{attr:{startOffset:'100%'}});
+//    tl.to("#Text",5,{text:{value:"THUNK TANK"}},3);
+// });
+
+
+
+</script>
+
+
+</body>
+</html>
