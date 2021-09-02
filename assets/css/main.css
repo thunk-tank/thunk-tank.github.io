@@ -331,8 +331,9 @@ nav a.active {
 
 .site-nav {
   font-family: 'Sen', sans-serif;
-  font-size: 0.67rem;
+  font-size: 0.8rem;
 	position: absolute;
+  text-align: right;
 	right: 0;
 }
 
@@ -538,6 +539,12 @@ nav a.active {
   font-size: 0.67rem;
   text-transform: uppercase;
   content: "  NEW";
+}
+
+.articles .meta {
+  font-family: 'Sen', sans-serif;
+  font-size: 0.67rem;
+  text-transform: uppercase;
 }
 
 
