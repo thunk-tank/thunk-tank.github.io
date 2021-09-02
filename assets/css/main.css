@@ -33,13 +33,13 @@ footer, header, main, menu, nav, section, summary {
 html { height: 100%; }
 
 body {
-	font-family: "Playfair Display" !important;
+	font-family: "Goudy Bookletter 1911" !important;
 	line-height: 1.3em;
 	font-size: 18px;
 	color: #000;
 	background-color: #fff;
 	min-height:100%;
-	padding: 5%;
+	padding: 10%;
 }
 
 aside.featured {
@@ -159,7 +159,7 @@ aside .wrap.grid-4 .card:nth-of-type(3) {
 
 .card .link a {
 	border-bottom: 1px solid #fff;
-	font-family:  'Grotesque', sans-serif;
+	font-family:  'Sen', sans-serif;
 	text-transform: uppercase;
 	font-size: 1rem;
 }
@@ -192,7 +192,6 @@ aside .wrap.grid-4 .card:nth-of-type(3) {
 
 .card.active > .content .link {
 	opacity: 1;
-	background-color: #000;
 }
 
 .card.active .content:after {
@@ -318,7 +317,7 @@ header {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	font-size:2em;
-	font-family: "Grotesque", sans-serif;
+	font-family: "Sen", sans-serif;
 	text-transform: uppercase;
 }
 
@@ -331,6 +330,8 @@ nav a.active {
 }
 
 .site-nav {
+  font-family: 'Sen', sans-serif;
+  font-size: 0.67rem;
 	position: absolute;
 	right: 0;
 }
@@ -347,7 +348,7 @@ nav a.active {
   padding: 6px;
   margin: 0 4px;
   cursor: pointer;
-  font-family: 'Grotesque', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-size: 0.67rem;
   text-transform: uppercase;
 }
@@ -376,6 +377,7 @@ nav a.active {
   border: 1px #000 solid;
   color: #000;
 }
+
 
 /* ------ articles Index (grid) -------------------------------- */
 
@@ -471,7 +473,7 @@ nav a.active {
 
 
 .articles .excerpt {
-  font-family: "Grotesque", sans-serif;
+  font-family: "Goudy Bookletter 1911", serif;
 	display: none;
 	padding-top: 1rem;
 }
@@ -482,10 +484,7 @@ nav a.active {
   position: absolute;
   right: 1rem;
   bottom: 1rem;
-  font-family: "Grotesque", sans-serif;
-  border-bottom: 1px solid #fff;
-  background-color: #000;
-  color: #fff;
+  font-family: "Goudy Bookletter 1911", sans-serif;
 }
 
 .articles .excerpt .link:hover {
@@ -497,8 +496,25 @@ nav a.active {
 	color: #000;
 }
 
+.articles.active.purple {
+	background-color: #DCCDE9;
+}
+
+.articles.active.lightblue {
+	background-color: #ABC7C4;
+}
+
+.articles.active.yellow {
+	background-color: #F9E398;
+}
+
+.articles.active.green {
+	background-color: #C5C952;
+}
+
 .articles.active .excerpt {
 	display: block;
+  background-color: #fff;
   border: 1px solid;
 	color: #000;
 	position: fixed;
@@ -511,6 +527,19 @@ nav a.active {
   overflow-x: hidden;
 	overflow-y: scroll;
 }
+
+
+.articles.new > .title::after{
+  background:#F9E398;
+  padding: 2px;
+  margin: 0 4px;
+  cursor: pointer;
+  font-family: 'Sen', sans-serif;
+  font-size: 0.67rem;
+  text-transform: uppercase;
+  content: "  NEW";
+}
+
 
 figure a {
 	border-bottom: none;
@@ -626,7 +655,7 @@ main.about {
 }
 
 .contact-bar a {
-	font-family:  'Grotesque', sans-serif;
+	font-family:  'Sen', sans-serif;
 	text-transform: uppercase;
 	font-size: 0.75rem;
 	border-bottom: 1px solid #000;
@@ -762,9 +791,12 @@ main {
 	padding-top: 1rem;
 	width: 100%;
 	font-size: 1rem;
-	background: #000;
 	overflow:auto;
-	border-top: 1px solid #fff;
+  background: inherit;
+  border-top: 1px dashed;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
 	margin-top: 1rem;
 }
 
