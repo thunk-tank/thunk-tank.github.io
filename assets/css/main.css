@@ -344,7 +344,6 @@ nav a.active {
 }
 
 .filter {
-
   border: 1px #fff dashed;
   padding: 6px;
   margin: 0 4px;
@@ -354,23 +353,25 @@ nav a.active {
   text-transform: uppercase;
 }
 
+.filter.new{background:#F9E398; border: 1px #F9E398 dashed;}
+
 .filter:hover{
   border: 1px #000 dashed;
 }
 
-.filter.consumerism:hover, .filter.consumerism.is-checked {
+.filter.consumerism.is-checked {
     background: linear-gradient(160deg, #F9E398, #C5C952);
 }
 
-.filter.garbage:hover, .filter.garbage.is-checked {
+.filter.garbage.is-checked {
 	background: linear-gradient(60deg, #C5C952, #ABC7C4);
 }
 
-.filter.prognostication:hover,.filter.prognostication.is-checked {
+.filter.prognostication.is-checked {
 	background: linear-gradient(120deg, #ABC7C4, #DCCDE9);
 }
 
-.filter.everything:hover, .filter.everything.is-checked{
+.filter.everything.is-checked{
 	background:linear-gradient(30deg, #DCCDE9, #F9E398);
 }
 
