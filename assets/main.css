@@ -67,10 +67,10 @@ aside .about-wrap {
 	height: 100%;
 	position: absolute;
 	top:0;
-	padding: 1rem;
+	padding: 3rem;
 	opacity: 0;
-	transition: opacity 1s ease-in-out;
-	overflow: scroll;
+	transition: opacity 0s ease-in-out;
+	overflow: hidden;
 }
 
 aside .about-wrap.visible {
@@ -544,7 +544,7 @@ footer {
 /* ------ About ------------------------------------------- */
 
 .about-bg {
-	background: linear-gradient(-45deg, #ffaaaa, #a0ffa0, #93e2ff, #d2aeff);
+	background: linear-gradient(60deg, #DCCDE9, #F9E398, #C5C952, #ABC7C4, #DCCDE9, #DCCDE9);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -622,40 +622,6 @@ main.about {
 	margin: 0.25rem;
 }
 
-/* ------ Other ------------------------------------------- */
-
-.social-buttons {
-	margin: 1em 0;
-}
-
-.social-buttons a {
-	border-bottom:none;
-	padding:0.2em;
-}
-
-.fa-2x {
-	font-size:1.5em;
-}
-
-.signup {
-	margin:1em 0;
-}
-
-.signup input {
-	background: transparent;
-  border-bottom: 1px solid #000;
-  padding:0.5em;
-  width:75%;
-}
-
-.signup button {
-	font-size: 0.75em;
-  background: transparent;
-  position: relative;
-  padding: 1em;
-  cursor: pointer;
-}
-
 /* ------- Mobile ----------------------*/
 
 @media screen and (max-width: 768px) {
@@ -683,6 +649,31 @@ aside.featured {
 	top: unset;
 }
 
+.articles .teaser.pos1{
+  top: 0;
+  right: 0;
+}
+
+.articles .teaser.pos2{
+  margin-top:10%;
+  left: 0%;
+}
+
+.articles .teaser.pos3{
+  margin-top:20%;
+  right: 10%;
+}
+
+.articles .teaser.pos4{
+  margin-top:0%;
+  right: 40%;
+}
+
+.articles .teaser.pos5{
+  margin-top:30%;
+  left: 0%;
+}
+
 aside .wrap {
 	max-width: 100%;
   height: 100%;
@@ -690,6 +681,7 @@ aside .wrap {
 
 aside .about-wrap {
 	width: 100%;
+  overflow:hidden;
 }
 
 aside .wrap.grid-1 .card {
