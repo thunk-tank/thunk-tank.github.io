@@ -402,21 +402,26 @@ nav a.active {
 .articles .teaser {
         display: none;
         position: absolute;
-        max-width: 200px;
+        max-width:18%;
         z-index: 99;
     }
 
 .teaser-circle {
   object-fit: cover;
-      width: 200px;
-      height: 200px;
+      width: 16vw;
+      height: 16vw;
       position: relative;
       overflow: hidden;
       border-radius: 50%;
     }
 
 .articles .teaser.pos1{
-  max-width: 300px;
+  max-width: 22%;
+  top: 0;
+  right: 0;
+}
+
+.articles .teaser.pos1{
   top: 0;
   right: 0;
 }
@@ -427,13 +432,13 @@ nav a.active {
 }
 
 .articles .teaser.pos3{
-  margin-top:30%;
+  margin-top:20%;
   right: 20%;
 }
 
 .articles .teaser.pos4{
-  margin-top:20%;
-  right: 40%;
+  margin-top:10%;
+  left: 60%;
 }
 
 .articles .teaser.pos5{
@@ -442,8 +447,14 @@ nav a.active {
 }
 
 .articles .teaser.pos6{
-  margin-top:25%;
-  left: 75%;
+  margin-top:30%;
+  left: 60%;
+}
+
+.articles .teaser.pos7{
+  margin-top:30%;
+  max-width:10%;
+  right: 10%;
 }
 
 .articles:hover .teaser {
