@@ -361,30 +361,15 @@ nav a.active {
 }
 
 .filter.garbage:hover, .filter.garbage.is-checked {
-	background: linear-gradient(60deg, mediumpurple 30%, orange);
+	background: linear-gradient(60deg, #C5C952, #ABC7C4);
 }
 
 .filter.prognostication:hover,.filter.prognostication.is-checked {
-	background: linear-gradient(120deg, orange 30%, cyan);
+	background: linear-gradient(120deg, #ABC7C4, #DCCDE9);
 }
 
-.filter.everything:hover {
-	background:linear-gradient(30deg,cyan 30%, darkmagenta);
-}
-
-.filter.consumerism:hover {
-    background: linear-gradient(160deg, yellow 10%, mediumpurple);
-}
-
-.filter.garbage:hover {
-    background: linear-gradient(60deg, mediumpurple 30%, orange);
-}
-
-
-.filter.everything.is-checked {
-    border: 1px #000 solid;
-    color: #000;
-    background:linear-gradient(30deg,cyan 30%, darkmagenta);
+.filter.everything:hover, .filter.everything.is-checked{
+	background:linear-gradient(30deg, #DCCDE9, #F9E398);
 }
 
 .filter.is-checked {
@@ -421,7 +406,17 @@ nav a.active {
         z-index: 99;
     }
 
+.teaser-circle {
+  object-fit: cover;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
 .articles .teaser.pos1{
+  max-width: 300px;
   top: 0;
   right: 0;
 }
@@ -444,6 +439,11 @@ nav a.active {
 .articles .teaser.pos5{
   margin-top:30%;
   left: 50%;
+}
+
+.articles .teaser.pos6{
+  margin-top:25%;
+  left: 75%;
 }
 
 .articles:hover .teaser {
