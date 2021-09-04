@@ -2,6 +2,13 @@
 
 /* -----  Font Definitions  --------------------------------------------- */
 
+@font-face {
+font-family: "Junction";
+src: url("~/assets/webfonts/Junction.eot");
+src: url("~/assets/webfonts/Junction.woff") format("woff"),
+url("~/assets/webfonts/Junction.otf") format("opentype"),
+url("~/assets/webfonts/Junction.svg#filename") format("svg");
+
 /* -----  Reset & Normalization  ---------------------------------------- */
 
 *, *::before, *::after {
